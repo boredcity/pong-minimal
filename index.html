@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>@pong###</title>
+    </head>
+    <body>
+        <pre>
+/*
+
+@pong###
+
+current score is <span id="score"></span>
+the game is played untill someone reaches score <span id="winningScore" contenteditable="true"></span>.
+
+board size is <span id="xLength" contenteditable="true"></span> by <span id="yLength" contenteditable="true"></span>.
+paddles are of length <span id="paddleLength" contenteditable="true"></span>.
+ball moves every <span id="frameTime" contenteditable="true"></span> ms.
+
+left paddle is controlled by <select id="paddle1">
+    <option id="ARROWS">up and down arrows</option>
+    <option id="WASD">"w" and "s" keys</option>
+    <option id="AI" selected>AI</option>
+</select>
+right paddle is controlled by <select id="paddle2">
+    <option id="ARROWS">up and down arrows</option>
+    <option id="WASD">"w" and "s" keys</option>
+    <option id="AI" selected>AI</option>
+</select>
+
+press <kbd>Space</kbd> to (un)pause the game
+
+*/
+        </pre>
+        <pre id="field"></pre>
+        <style>
+            body { text-align: center; }
+            #field {
+                border: 1px solid black;
+                display: inline-block;
+                padding: 4px;
+            }
+            .row {
+                display: flex;
+                line-height: 1;
+            }
+        </style>
+        <script src="./index.js"></script>
+    </body>
+</html>
